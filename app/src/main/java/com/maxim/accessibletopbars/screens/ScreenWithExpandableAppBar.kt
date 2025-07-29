@@ -5,10 +5,10 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.maxim.accessibletopbars.appbar.ExpandableAppBar
 import com.maxim.accessibletopbars.appbar.components.BackButton
@@ -32,10 +32,12 @@ internal fun ScreenWithExpandableAppBar(onBack: () -> Unit) {
                     scrollStateOfMainContent = rememberScrollState()
                 )
             }) { contentPadding ->
-            Box(modifier = Modifier
-                .padding(contentPadding)
-                .fillMaxSize()
-                .background(Color(0xFFB64343)))
+            Box(
+                modifier = Modifier
+                    .padding(contentPadding)
+                    .fillMaxSize()
+                    .background(MaterialTheme.colorScheme.surface)
+            )
         }
     }
 }

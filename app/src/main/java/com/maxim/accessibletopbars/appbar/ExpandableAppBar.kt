@@ -36,6 +36,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.maxim.accessibletopbars.appbar.components.BackButton
 import com.maxim.accessibletopbars.appbar.components.RefreshButton
 import com.maxim.accessibletopbars.isScreenReaderOn
@@ -94,6 +95,7 @@ fun ExpandableAppBar(
                     label = "AnimatedTitleText",
                     modifier = Modifier
                         .weight(1f)
+                        .padding(vertical = 16.dp)
                         .semantics(mergeDescendants = true) {
                             this.contentDescription = title
                             heading()
