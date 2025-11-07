@@ -1,22 +1,22 @@
-package com.maxim.accessibletopbars.appbar.components
+package com.maxim.tricks.appbar.components
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.maxim.accessibletopbars.ui.theme.AccessibleTopBarsTheme
+import com.maxim.tricks.ui.theme.AccessibleTopBarsTheme
 
 @Composable
-internal fun RefreshButton(onClick: () -> Unit) {
+internal fun BackButton(onClick: () -> Unit) {
     IconButton(
         onClick = onClick
     ) {
         Icon(
-            imageVector = Icons.Default.Refresh,
-            contentDescription = "Refresh",
+            imageVector = Icons.AutoMirrored.Default.ArrowBack,
+            contentDescription = "Go back",
             tint = MaterialTheme.colorScheme.inverseOnSurface
         )
     }
@@ -25,9 +25,9 @@ internal fun RefreshButton(onClick: () -> Unit) {
 
 @Preview(showBackground = true)
 @Composable
-private fun RefreshButtonPreview() {
+private fun BackButtonPreview() {
     AccessibleTopBarsTheme {
-        RefreshButton(
+        BackButton(
             onClick = {}
         )
     }

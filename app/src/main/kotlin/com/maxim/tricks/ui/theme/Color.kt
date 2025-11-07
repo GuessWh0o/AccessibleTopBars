@@ -1,4 +1,4 @@
-package com.maxim.accessibletopbars.ui.theme
+package com.maxim.tricks.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme

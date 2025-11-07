@@ -1,4 +1,4 @@
-package com.maxim.accessibletopbars.screens
+package com.maxim.tricks.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -14,9 +14,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.maxim.accessibletopbars.mainactivity.Route
-import com.maxim.accessibletopbars.ui.theme.AccessibleTopBarsTheme
-import com.maxim.accessibletopbars.ui.theme.dimens
+import com.maxim.tricks.mainactivity.Route
+import com.maxim.tricks.ui.theme.AccessibleTopBarsTheme
+import com.maxim.tricks.ui.theme.dimens
 
 @Composable
 internal fun SelectionScreen(navHostController: NavHostController) {
@@ -37,6 +37,13 @@ internal fun SelectionScreen(navHostController: NavHostController) {
 
             }) {
                 Text("Tooltip App Bar")
+            }
+
+            Button(onClick = {
+                navHostController.navigate(Route.AccessibleButton.routeName)
+
+            }) {
+                Text("Accessible Button")
             }
         }
     }

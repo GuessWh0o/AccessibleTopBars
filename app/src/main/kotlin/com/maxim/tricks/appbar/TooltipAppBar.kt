@@ -1,4 +1,4 @@
-package com.maxim.accessibletopbars.appbar
+package com.maxim.tricks.appbar
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -28,11 +28,11 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
-import com.maxim.accessibletopbars.appbar.components.BackButton
-import com.maxim.accessibletopbars.appbar.components.RefreshButton
-import com.maxim.accessibletopbars.isScreenReaderOn
-import com.maxim.accessibletopbars.ui.theme.AccessibleTopBarsTheme
-import com.maxim.accessibletopbars.ui.theme.topBarText
+import com.maxim.tricks.appbar.components.BackButton
+import com.maxim.tricks.appbar.components.RefreshButton
+import com.maxim.tricks.isScreenReaderOn
+import com.maxim.tricks.ui.theme.AccessibleTopBarsTheme
+import com.maxim.tricks.ui.theme.topBarText
 import kotlinx.coroutines.launch
 
 

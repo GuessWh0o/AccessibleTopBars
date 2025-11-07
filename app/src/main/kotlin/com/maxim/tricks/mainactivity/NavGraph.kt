@@ -1,12 +1,13 @@
-package com.maxim.accessibletopbars.mainactivity
+package com.maxim.tricks.mainactivity
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.maxim.accessibletopbars.screens.ScreenWithExpandableAppBar
-import com.maxim.accessibletopbars.screens.ScreenWithTooltipAppBar
-import com.maxim.accessibletopbars.screens.SelectionScreen
+import com.maxim.tricks.screens.ScreenWithExpandableAppBar
+import com.maxim.tricks.screens.ScreenWithFocusableButton
+import com.maxim.tricks.screens.ScreenWithTooltipAppBar
+import com.maxim.tricks.screens.SelectionScreen
 
 @Composable
 internal fun NavGraph(navHostController: NavHostController) {
@@ -28,11 +29,19 @@ internal fun NavGraph(navHostController: NavHostController) {
                 }
             )
         }
+        composable(route = Route.AccessibleButton.routeName) {
+            ScreenWithFocusableButton(
+                onBack = {
+                    navHostController.popBackStack()
+                }
+            )
+        }
     }
 }
 
 internal enum class Route(val routeName: String) {
     Selection("selection"),
     Expandable("expandable"),
-    Tooltip("tooltip")
+    Tooltip("tooltip"),
+    AccessibleButton("button"),
 }

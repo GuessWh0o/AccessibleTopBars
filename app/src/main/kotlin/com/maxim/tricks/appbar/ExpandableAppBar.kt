@@ -1,4 +1,4 @@
-package com.maxim.accessibletopbars.appbar
+package com.maxim.tricks.appbar
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.animateContentSize
@@ -37,12 +37,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.maxim.accessibletopbars.appbar.components.BackButton
-import com.maxim.accessibletopbars.appbar.components.RefreshButton
-import com.maxim.accessibletopbars.isScreenReaderOn
-import com.maxim.accessibletopbars.ui.theme.AccessibleTopBarsTheme
-import com.maxim.accessibletopbars.ui.theme.dimens
-import com.maxim.accessibletopbars.ui.theme.topBarText
+import com.maxim.tricks.appbar.components.BackButton
+import com.maxim.tricks.appbar.components.RefreshButton
+import com.maxim.tricks.isScreenReaderOn
+import com.maxim.tricks.ui.theme.AccessibleTopBarsTheme
+import com.maxim.tricks.ui.theme.dimens
+import com.maxim.tricks.ui.theme.topBarText
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

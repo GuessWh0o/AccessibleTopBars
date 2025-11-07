@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.maxim.accessibletopbars"
-    compileSdk = 35
+    namespace = "com.maxim.tricks"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.maxim.accessibletopbars"
+        applicationId = "com.maxim.accessibilitytricks"
         minSdk = 25
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 

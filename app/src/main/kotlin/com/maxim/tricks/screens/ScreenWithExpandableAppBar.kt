@@ -1,4 +1,4 @@
-package com.maxim.accessibletopbars.screens
+package com.maxim.tricks.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -10,10 +10,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.maxim.accessibletopbars.appbar.ExpandableAppBar
-import com.maxim.accessibletopbars.appbar.components.BackButton
-import com.maxim.accessibletopbars.appbar.components.RefreshButton
-import com.maxim.accessibletopbars.ui.theme.AccessibleTopBarsTheme
+import com.maxim.tricks.appbar.ExpandableAppBar
+import com.maxim.tricks.appbar.components.BackButton
+import com.maxim.tricks.appbar.components.RefreshButton
+import com.maxim.tricks.ui.theme.AccessibleTopBarsTheme
 
 @Composable
 internal fun ScreenWithExpandableAppBar(onBack: () -> Unit) {

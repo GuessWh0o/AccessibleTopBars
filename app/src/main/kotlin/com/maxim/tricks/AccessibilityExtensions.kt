@@ -1,4 +1,4 @@
-package com.maxim.accessibletopbars
+package com.maxim.tricks
 
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Context
